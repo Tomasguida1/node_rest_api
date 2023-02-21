@@ -23,5 +23,5 @@ app.get('/', (req, res) =>{res.send("welcome to my api")})
 app.use('/api',routes)
 
 //server running
-app.listen(app.get('port'), ()=> {console.log('server running on port', 9000);});
+app.listen(app.get('port'), ()=> {console.log('server running on port', 5000);});
 
