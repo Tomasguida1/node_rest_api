@@ -5,7 +5,7 @@ const routes = require('./routes');
 
 //initialize
 const app = express();
-app.set('port', process.env.PORT||5000)
+app.set('port', process.env.PORT||8080)
 const dbOptions = {
     host:'localhost',
     port:3306,
@@ -23,5 +23,5 @@ app.get('/', (req, res) =>{res.send("welcome to my api")})
 app.use('/api',routes)
 
 //server running
-app.listen(app.get('port'), ()=> {console.log('server running on port', 5000);});
+app.listen(app.get('port'), ()=> {console.log('server running on port', 8080);});
 
