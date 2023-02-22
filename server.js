@@ -3,12 +3,12 @@ const  mysql = require('mysql2');
 const myconn = require("express-myconnection");
 const routes = require('./routes');
 
-//initialize
+//initialize ----------------------------------------------------------------
 const app = express();
-app.set('port', process.env.PORT||8080)
+app.set('port', process.env.PORT||5000)
 const dbOptions = {
     host:'localhost',
-    port:3306,
+    port:8080,
     user: 'root',
     password: 'firefly',
     database: 'pagina'
